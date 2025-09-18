@@ -42,3 +42,9 @@ int main() {
 
     free_expr(e3);
 }
+
+
+// for compiling i used the default one like in the Makefile
+// gcc -Wall -Wextra -Werror -o expr expr.c print-expr.c main.c
+
+// and for running it i just ran the .exe file as in linux ./expr.exe

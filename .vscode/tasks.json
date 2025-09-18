@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build C file",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",                                  // include debug info
+                "${file}",                             // compile the current file
+                "-o", "${fileDirname}/${fileBasenameNoExtension}.exe" // output exe
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile the active C file using GCC"
+        }
+    ]
+}
